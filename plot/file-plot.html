@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>My first chart using FusionCharts Suite XT</title>
+<script type="text/javascript" src="js/fusioncharts.js"></script>
+<script type="text/javascript" src="js/themes/fusioncharts.theme.fint.js"></script>
+<script type="text/javascript">
+  FusionCharts.ready(function(){
+    var revenueChart = new FusionCharts({
+        "type": "column2d",
+        "renderAt": "chartContainer",
+        "width": "500",
+        "height": "300",
+        "dataFormat": "json",
+        "dataSource":  {
+          "chart": {
+            "caption": "Live Top 10 Tweets",
+            "subCaption": "Real Data",
+            "xAxisName": "Tweets",
+            "yAxisName": "Tweets Overall Number",
+            "theme": "fint"
+         },
+         "data": [
+            {
+               "label": "Jan",
+               "value": "40"
+            },
+            {
+               "label": "Feb",
+               "value": "80"
+            },
+            {
+               "label": "Mar",
+               "value": "70"
+            },
+            {
+               "label": "Apr",
+               "value": "50"
+            },
+            {
+               "label": "May",
+               "value": "90"
+            },
+            {
+               "label": "Jun",
+               "value": "50"
+            },
+            {
+               "label": "Jul",
+               "value": "6"
+            },
+            {
+               "label": "Aug",
+               "value": "10"
+            },
+            {
+               "label": "Sep",
+               "value": "60"
+            },
+            {
+               "label": "Oct",
+               "value": "3"
+            }
+          ]
+      }
+
+  });
+revenueChart.render();
+})
+</script>
+</head>
+<body>
+  <div id="chartContainer">FusionCharts XT will load here!</div>
+</body>
+</html>

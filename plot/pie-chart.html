@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>My first chart using FusionCharts Suite XT</title>
+<script type="text/javascript" src="http://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
+<script type="text/javascript" src="http://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fint.js?cacheBust=56"></script>
+<script type="text/javascript">
+  FusionCharts.ready(function(){
+    var fusioncharts = new FusionCharts({
+    type: 'pie2d',
+    renderAt: 'chart-container',
+    width: '900',
+    height: '600',
+    dataFormat: 'json',
+    dataSource: {
+        "chart": {
+            "caption": "Live Top 10  Tweets",
+            "subCaption": "Real Data",
+            "showPercentInTooltip": "0",
+            "decimals": "1",
+            "useDataPlotColorForLabels": "1",
+            //Theme
+            "theme": "fint"
+        },
+        "data": [{
+"label":"quote",
+"value":"127",
+        }, 
+	{
+"label":"CopaSudamericana",
+"value":"55",
+        }, 
+	{
+"label":"MTVStarsLadyGaga",
+"value":"46",
+        },  
+	{
+"label":"https",
+"value":"43",
+        }, 
+	{
+"label":"ftirac",
+"value":"41",
+        }, 
+	{
+"label":"GazetedenTekzip",
+"value":"40",
+        }, 
+	{
+"label":"Instagram",
+"value":"24",
+        }, 
+	{
+"label":"gameinsight",
+"value":"16",
+        }, 
+	{
+"label":"LionHeartImpact",
+"value":"15",
+        },
+	{
+"label":"androidgames",
+"value":"14",
+        }]
+    }
+}
+);
+    fusioncharts.render();
+});
+</script>
+</head>
+<body>
+  <div id="chart-container">FusionCharts XT will load here!</div>
+</body>
+</html>
