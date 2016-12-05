@@ -1,2 +1,1 @@
-Real time log analysis using Apache Kafaka
-
+Real time Data Analysis using Apache Spark
